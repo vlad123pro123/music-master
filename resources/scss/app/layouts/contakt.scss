@@ -1,0 +1,51 @@
+.container-kontakt {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom:5% ;
+    background-color: #fff; /* Задаем цвет фона контейнера */
+    border-radius: 10px; /* Добавляем закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+h1, h2 {
+    color: #A684F0; /* Задаем цвет заголовков */
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: calc(100% - 22px); /* Добавляем отступ справа для компенсации полей ввода */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Добавляем закругление углов */
+}
+
+.contact-form button {
+    background-color: #A684F0; /* Задаем цвет кнопки */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Добавляем плавное изменение цвета при наведении */
+}
+
+.contact-form button:hover {
+  transform: none;
+    background-color: #7F5AB5; /* Цвет кнопки при наведении */
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #A684F0; /* Цвет ссылок */
+}
+
+.social-media a:hover {
+    color: #7F5AB5; /* Цвет ссылок при наведении */
+}

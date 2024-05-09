@@ -1,0 +1,103 @@
+.record {
+    background-color: $blue;
+}
+
+.record__container {
+    padding: 10rem 0;
+}
+
+.record__title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    background-color: $night;
+    color: white;
+    padding: 1.8rem 0;
+    margin-top: 0;
+}
+
+.record__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.record__content-item {
+    position: relative;
+    width: 100%; /* Ширина слайда должна быть 100% */
+    height: 20rem; /* Высота слайда */
+}
+
+.record__item-img {
+    position: relative;
+    width: 40rem;
+    height: 30rem;
+}
+
+.record__item-img > img {
+    display: block;
+    width: 40rem;
+    height: 30rem;
+}
+
+.record__item-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Используйте нужные вам значения RGBA для затемнения */
+    z-index: 1; /* Установите z-index, чтобы псевдоэлемент был выше изображения */
+}
+
+.record__item-img > span {
+    position: absolute;
+    z-index: 10;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: $white;
+    top: 30%;
+    text-align: center;
+    left: 25%;
+    max-width: 18rem;
+}
+
+.record__container {
+    position: relative;
+}
+
+.record__content-slider__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media(max-width: 1400px) {
+        display: none;
+    }
+}
+
+.record__content-slider__buttons > div {
+    position: absolute;
+    z-index: 15;
+    top: 45%;
+    width: 2.4rem;
+    height: 2.4rem;
+    @media (max-width: 800px) {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.record__content-slider-prev {
+    left: -5%;
+}
+
+.record__content-slider-next {
+    right: -5%;
+    @media (max-width: 800px) {
+        right: -15%;
+    }
+    @media (max-width: 600px) {
+        right: -25%;
+    }
+}
