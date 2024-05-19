@@ -74,9 +74,7 @@
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="cost__title">2490 BYN.</div>
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 6L13.0622 0H0.937822L7 6Z" fill="black"/>
                 </svg>
             </div>
         </div>

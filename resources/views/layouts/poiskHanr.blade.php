@@ -23,4 +23,14 @@
             </select>
         </div>
     </form>
+    <form action="#" method="GET">
+        <div class="custom-select">
+            <select name="genre" id="genre">
+                <option value="">Фильтр по группе</option>
+                <option value="Фантастика">Космонавты</option>
+                <option value="Детектив">Брокеры</option>
+                <option value="Романтика">Малыши</option>
+            </select>
+        </div>
+    </form>
 </div>

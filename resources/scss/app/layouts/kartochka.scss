@@ -77,13 +77,11 @@
 }
 
 audio {
-    width: 33%;
-    margin-bottom: 10%;
+    width: 80%;
     margin-top: 1%;
-    margin-left: 8%;
 }
 
-span{
+.dop-opisanie span{
     color: rgb(179, 179, 179);
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
@@ -107,4 +105,33 @@ span{
     font-weight: 500;
     line-height: 40px;
     text-align: left;
+}
+.block-perehod-header{
+    display: flex;
+    gap: 5rem;
+}
+.block-perehod{
+    width: 40%;
+    margin-left:8%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.block-perehod-header span{
+    cursor: pointer;
+    color: #A684F0;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 30px;
+}
+.block-perehod-opisanie{
+    display: none;
+}
+.block-perehod-opisanie p{
+    color: rgb(179, 179, 179);
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
 }
