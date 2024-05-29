@@ -117,6 +117,7 @@ audio {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    margin-top: 5%;
 }
 .block-perehod-header span{
     cursor: pointer;
@@ -127,9 +128,7 @@ audio {
     padding: 1.5rem;
     border-radius: 30px;
 }
-.block-perehod-opisanie{
-    display: none;
-}
+
 .block-perehod-opisanie p{
     color: rgb(179, 179, 179);
     font-family: "Montserrat", sans-serif;

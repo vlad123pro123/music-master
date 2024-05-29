@@ -40,10 +40,6 @@
     </div>
 </div>
 <div class="block-perehod">
-    <div class="block-perehod-header">
-        <span class="playAud">Плэер</span>
-        <span class="playOpis">Описание</span>
-    </div>
     <audio class="aud" controls src="{{ asset('audio/Wallem.mp3') }}" id="audio"></audio>
     <div class="block-perehod-opisanie">
         <p>Данная пластинка была созда на 1230 году великим музыкантом Строком Владиславом Андреевичом</p>
@@ -60,12 +56,5 @@
     audio.onpause = function() {
         record.classList.remove('rekk'); // Убираем класс, чтобы остановить анимацию вращения
     };
-    document.querySelector('.playAud').addEventListener('click',()=>{
-        document.querySelector('.block-perehod-opisanie').style.display='none';
-        document.querySelector('.aud').style.display='block';
-    })
-    document.querySelector('.playOpis').addEventListener('click',()=>{
-        document.querySelector('.block-perehod-opisanie').style.display='block';
-        document.querySelector('.aud').style.display='none';
-    })
+
 </script>

@@ -1,32 +1,39 @@
 <section class="record">
-    <h1 class="record__title">Подборки пластинок</h1>
+    <h1 class="record__title">Отзывыо компании</h1>
     <div class="record__container container">
-        <div class="swiper record__content record__content-slider">
-            <div class="swiper-wrapper record__wrapper">
-                @foreach($records as $record)
-                    <div class="swiper-slide record__content-item record__item">
-                        <div class="record__item-img">
-                            <span>{{ $record?->description }}</span>
-                            <img src="{{ asset('storage/' . $record->image_url) }}" alt="img">
-                        </div>
+        <div class="reviews-wrapper">
+            <button class="prev-btn">&#10094;</button>
+            <div class="reviews-container">
+                <div class="review-item">
+                    <div class="review-content">
+                        <div class="review-author">Иван Иванов</div>
+                        <div class="review-date">21 мая 2024</div>
+                        <p class="review-text">Очень хороший сервис! Быстро и качественно выполненная работа. Очень доволен результатом.</p>
                     </div>
-                @endforeach
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <div class="review-author">Екатерина Смирнова</div>
+                        <div class="review-date">20 мая 2024</div>
+                        <p class="review-text">Впечатления о сервисе только положительные. Очень довольна результатом!</p>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <div class="review-author">Петр Петров</div>
+                        <div class="review-date">19 мая 2024</div>
+                        <p class="review-text">Отличное обслуживание. Рекомендую всем!</p>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <div class="review-author">Мария Сидорова</div>
+                        <div class="review-date">18 мая 2024</div>
+                        <p class="review-text">Сервис на высшем уровне! Все сделали очень оперативно и качественно.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="record__content-slider__buttons">
-            <div class="record__content-slider-prev">
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="22" cy="22" r="22" fill="white"/>
-                    <path d="M26 14L15.5 22.5L26 30.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-
-            <div class="record__content-slider-next">
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="22" cy="22" r="22" fill="white"/>
-                    <path d="M17 30.5L27.5 22L17 14" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
+            <button class="next-btn">&#10095;</button>
         </div>
     </div>
 </section>

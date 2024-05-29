@@ -498,6 +498,11 @@ footer {
   z-index: 5;
 }
 
+.header__cart {
+  display: flex;
+  gap: 10px;
+}
+
 .icon__menu {
   cursor: pointer;
   outline: none;
@@ -1153,6 +1158,70 @@ button:hover {
   }
 }
 
+.reviews-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-container {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+}
+
+.review-item {
+  min-width: 300px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.review-content {
+  text-align: left;
+}
+
+.review-author {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.review-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
 .footer {
   padding: 5.7rem 0 4.7rem 0;
   background: url(/images/footer.png?3c33473872357cbfe973d2416fdc93af) no-repeat;
@@ -1655,6 +1724,7 @@ audio {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  margin-top: 5%;
 }
 
 .block-perehod-header span {
@@ -1667,12 +1737,115 @@ audio {
   border-radius: 30px;
 }
 
-.block-perehod-opisanie {
-  display: none;
-}
-
 .block-perehod-opisanie p {
   color: rgb(179, 179, 179);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+}
+
+.container-personal-account {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-account-title {
+  text-align: center;
+  color: #333;
+}
+
+.section-title {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-section, .addresses-section, .orders-section {
+  margin-bottom: 20px;
+}
+
+.profile-info p, .address-item span, .order-item span {
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #b700ff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 5s ease;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: #8c00b3;
+  transform: scale(1.1);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin: 5px 0;
+}
+
+.form-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.address-list, .order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.address-item, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.address-item:last-child, .order-item:last-child {
+  border-bottom: none;
+}
+
+.address-text, .order-text {
+  flex: 1;
+}
+
+.add-address-form, .edit-profile-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 10px;
 }

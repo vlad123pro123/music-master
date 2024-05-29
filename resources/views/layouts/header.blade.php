@@ -45,6 +45,9 @@
                     <li class="header__list-item">
                         <a href="{{ route('kontakts.kontakt') }}" class="header__list-link">Контакты</a>
                     </li>
+                    <li class="header__list-item">
+                        <a href="{{ route('kab.kab') }}" class="header__list-link">Личный кабинет</a>
+                    </li>
                     @guest
                         <li class="header__list-item">
                             <a href="{{ route('login.index') }}" class="header__list-link">Войти</a>
@@ -77,6 +80,9 @@
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 </svg>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="black" d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 0 0-12 0zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6m0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4" />
+            </svg>
         </div>
         @auth
             <div class="header__avatar-wrapper">

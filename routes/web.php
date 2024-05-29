@@ -33,3 +33,4 @@ Route::view('/katalog', 'catalog.catalog')->name('catalog.catalog');
 Route::view('/kontakts', 'kontakts.kontakt')->name('kontakts.kontakt');
 Route::view('/kartochka', 'cartochka.cartochka')->name('cartochka.cartochka');
 Route::view('/korzina', 'korzina.korzina')->name('korzina.korzina');
+Route::view('/kab', 'kab.kab')->name('kab.kab');
